@@ -1,5 +1,6 @@
 nav {
-  background: #0d0d0d;
+  /* background: #0d0d0d; */
+  background: #16222a;
   height: 80px;
   margin-top: -80px;
   display: flex;
@@ -34,8 +35,12 @@ nav {
   display: flex;
   align-items: center;
   margin-left: 24px;
-  font-weight: bold;
+  font-weight: 700;
   text-decoration: none;
+}
+
+.nav__logo span {
+  font-weight: 500;
 }
 
 .nav__icon {

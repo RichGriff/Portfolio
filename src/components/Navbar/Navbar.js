@@ -11,20 +11,26 @@ const Navbar = ({ toggle }) => {
       <nav>
         <div className="nav__container">
           <Link to="/" className="nav__logo">
-            Richard Griffiths
+            Richard<span>Griffiths</span>
           </Link>
           <div className="nav__icon" onClick={toggle}>
             <FaBars />
           </div>
           <ul className="nav__menu">
             <li className="nav__item">
-              <LinkS to="work">My Work</LinkS>
+              <LinkS activeClass="active" spy={true} smooth={true} duration={500} to="work">
+                My Work
+              </LinkS>
             </li>
             <li className="nav__item">
-              <LinkS to="about">About</LinkS>
+              <LinkS activeClass="active" spy={true} smooth={true} duration={500} to="about">
+                About
+              </LinkS>
             </li>
             <li className="nav__item">
-              <LinkS to="skills">Skills</LinkS>
+              <LinkS activeClass="active" spy={true} smooth={true} duration={500} to="skills">
+                Skills
+              </LinkS>
             </li>
           </ul>
         </div>

@@ -10,7 +10,7 @@ const Layout1 = ({ project, projectScreen }) => {
           <h3>{project.title}</h3>
           <p>{project.desc}</p>
           <div className="project__tools">
-            <p>React, Gatsby, GraphQL, Styled Components</p>
+            <p>{project.tools.join(", ")}</p>
           </div>
           <ul className="project__icons">
             <li>
@@ -28,7 +28,7 @@ const Layout1 = ({ project, projectScreen }) => {
       </div>
       <div className="project__col2">
         <div className="project__image">
-          <img src={projectScreen} alt="screen" />
+          <img src={project.screen} alt="screen" />
         </div>
       </div>
     </div>

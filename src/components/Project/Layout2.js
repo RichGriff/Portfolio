@@ -7,15 +7,15 @@ const Layout2 = ({ project, projectScreen }) => {
     <div className="project__row">
       <div className="project__col1">
         <div className="project__image">
-          <img src={projectScreen} alt="screen" />
+          <img src={project.screen} alt="screen" />
         </div>
       </div>
       <div className="project__col2">
-        <div className="project__details" style={{ marginLeft: "5rem" }}>
+        <div className="project__details" style={{ marginLeft: "4rem" }}>
           <h3>{project.title}</h3>
           <p>{project.desc}</p>
           <div className="project__tools">
-            <p>React, Gatsby, GraphQL, Styled Components</p>
+            <p>{project.tools.join(", ")}</p>
           </div>
           <ul className="project__icons">
             <li>

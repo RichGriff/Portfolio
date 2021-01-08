@@ -7,6 +7,8 @@ import Navbar from "./components/Navbar/Navbar";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Hero from "./components/Hero/Hero";
 import Work from "./components/Work/Work";
+import About from "./components/About/About";
+import Skills from "./components/Skills/Skills";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,8 +25,8 @@ function App() {
       <Navbar toggle={toggle} />
       <Hero />
       <Work />
-      {/* About */}
-      {/* Skills */}
+      <About />
+      <Skills />
     </Router>
   );
 }

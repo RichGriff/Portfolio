@@ -17,10 +17,6 @@ const Work = () => {
             return <Project key={index} project={item} />;
           }
         })}
-        {/* <Project projectTitle="Explore" />
-        <Project projectTitle="Netflix Clone" imageFirst />
-        <Project projectTitle="Online Store" />
-        <Project projectTitle="Game API" imageFirst /> */}
       </div>
     </div>
   );
