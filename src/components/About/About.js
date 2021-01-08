@@ -18,10 +18,10 @@ const About = () => {
             <p>I'm a Front_End Developer based in the UK, with a few years experience in creating interactive and engaging web applications</p>
             <p>Most of my experience so far has been leant towards front-end development, however I am eager to gain more knowledge and I am always learning!</p>
             <div className="about__links">
-              <a href="#">
+              <a href="https://github.com/RichGriff" target="_blank" rel="noreferrer">
                 <ImGithub />
               </a>
-              <a href="#">
+              <a href="https://www.instagram.com/r1chgriffiths/" target="_blank" rel="noreferrer">
                 <GrInstagram />
               </a>
             </div>
