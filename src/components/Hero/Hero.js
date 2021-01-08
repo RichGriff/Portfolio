@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link as LinkS } from "react-scroll";
 import { TimelineLite, Power3 } from "gsap";
 
 import HeroImage from "./HeroImage";
@@ -22,7 +23,9 @@ const Hero = () => {
             </h1>
             <p className="hero-anim">Hi, I'm Richard a Front-End Web Developer with a passion in creating applications with React and other Javascript technologies.</p>
             <div className="hero-anim">
-              <button>View my work</button>
+              <LinkS className="hero__btn" activeClass="active" spy={true} smooth={true} duration={800} to="work">
+                View my work
+              </LinkS>
             </div>
           </div>
           <div className="hero__img">

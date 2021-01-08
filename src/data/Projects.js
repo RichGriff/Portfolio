@@ -7,8 +7,8 @@ export const Projects = [
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad expedita modi accusantium quaerat mollitia dolorem recusandae dolor doloribus ea repudiandae?",
     screen: exploreImg,
     tools: ["React", "Gatsby", "GraphQL", "Styled Components"],
-    githubUrl: "http://github.com",
-    demoUrl: "http://google.com",
+    githubUrl: "https://github.com/RichGriff/travel-site",
+    demoUrl: "https://gracious-brattain-546008.netlify.app/",
     imageFirst: false
   },
   {
@@ -16,8 +16,8 @@ export const Projects = [
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad expedita modi accusantium quaerat mollitia dolorem recusandae dolor doloribus ea repudiandae?",
     screen: netflixImg,
     tools: ["React", "Gatsby", "GraphQL", "Styled Components"],
-    githubUrl: "http://github.com",
-    demoUrl: "http://google.com",
+    githubUrl: "https://github.com/RichGriff/netflix-clone",
+    demoUrl: "https://netflix-clone-5966a.web.app/",
     imageFirst: true
   },
   {

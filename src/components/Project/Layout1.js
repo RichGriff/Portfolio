@@ -14,12 +14,12 @@ const Layout1 = ({ project, projectScreen }) => {
           </div>
           <ul className="project__icons">
             <li>
-              <a href={project.githubUrl} className="project__github">
+              <a href={project.githubUrl} target="_blank" className="project__github">
                 <ImGithub />
               </a>
             </li>
             <li>
-              <a href={project.demoUrl} className="project__demo">
+              <a href={project.demoUrl} target="_blank" className="project__demo">
                 <FiGlobe />
               </a>
             </li>
