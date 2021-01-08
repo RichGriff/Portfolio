@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Link as LinkS } from "react-scroll";
-import { TimelineLite, Power3 } from "gsap";
+import { TimelineLite } from "gsap";
 
 import HeroImage from "./HeroImage";
 // import heroImage from "./Hero_image.png";

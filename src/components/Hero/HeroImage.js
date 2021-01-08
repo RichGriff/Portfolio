@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useEffect } from "react";
 import { TimelineLite, Power3 } from "gsap";
 
 const HeroImage = () => {
