@@ -3,7 +3,7 @@ import { ImGithub } from "react-icons/im";
 import { GrInstagram } from "react-icons/gr";
 import "./About.css";
 
-import aboutMeImage from "../../images/about_me.png";
+import aboutMeImage from "../../images/about_me2.jpg";
 
 const About = () => {
   return (

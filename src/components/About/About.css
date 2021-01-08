@@ -27,15 +27,37 @@
 .about__wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding-left: 2rem;
 }
 
 .about__image {
-  width: 800px;
-  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 2rem;
+  position: relative;
+}
+
+.about__wrapper:after {
+  position: absolute;
+  content: " ";
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  bottom: 130px;
+  left: 270px;
+  background: #01bf71;
+  z-index: 5;
 }
 
 .about__image img {
   width: 100%;
+  height: auto;
 }
 
 .about__text {
@@ -44,9 +66,6 @@
   justify-content: start;
   padding: 4rem 4rem;
   width: 90%;
-}
-
-.about__text {
   font-size: 1.2rem;
 }
 
