@@ -7,17 +7,19 @@ import Layout2 from "./Layout2";
 import "./Project.css";
 
 const Project = ({ project, imageFirst }) => {
-  let projectLayout;
-  if (imageFirst) {
-    projectLayout = <Layout2 project={project} />;
-  } else {
-    projectLayout = <Layout1 project={project} />;
-  }
+  // let projectLayout;
+  // if (imageFirst) {
+  //   projectLayout = <Layout2 project={project} />;
+  // } else {
+  //   projectLayout = <Layout1 project={project} />;
+  // }
 
   return (
     <>
       <div className="project__container">
-        <div className="project__wrapper">{projectLayout}</div>
+        <div className="project__wrapper">
+          <Layout1 project={project} />
+        </div>
       </div>
     </>
   );

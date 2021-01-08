@@ -27,3 +27,10 @@
 .work__projects {
   padding-top: 0;
 }
+
+@media screen and (max-width: 768px) {
+  #work {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+}

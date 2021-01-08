@@ -37,7 +37,7 @@
   align-items: center;
   width: 400px;
   height: 300px;
-  border-radius: 50%;
+  border-radius: 200px;
   overflow: hidden;
   margin-right: 2rem;
   position: relative;
@@ -93,4 +93,34 @@
   color: #01bf71;
   transform: translateY(-3px);
   transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  .about__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+  }
+  .about__wrapper:after {
+    display: none;
+  }
+  .about__image {
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    width: 90%;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 0;
+    margin-left: -8rem;
+    padding: 2rem;
+  }
+  .about__text {
+    padding: 1.5rem;
+    font-size: 1.1rem;
+    background: #10191fd3;
+    margin-top: -2em;
+    z-index: 10;
+  }
 }
