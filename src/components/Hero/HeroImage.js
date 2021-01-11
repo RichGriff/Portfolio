@@ -1,15 +1,25 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
+import { gsap, TweenLite, Power3 } from "gsap";
 
 const HeroImage = () => {
-  // let tl = new TimelineLite();
-  // useEffect(() => {
-  //   tl.from("#Hero_image", { delay: 1.2, duration: 0.6, ease: Power3.easeOut, opacity: 0, x: 40 }).from(".win-large", { delay: 0.8, duration: 0.6, ease: Power3.easeInOut, opacity: 0, scale: 0, transformOrigin: "bottom" }, "-=.7").from(".win-small", { delay: 0.8, duration: 0.6, ease: Power3.easeInOut, opacity: 0, scale: 0, transformOrigin: "left" }, "-=.7").from(".speech", { delay: 0.8, duration: 0.6, ease: Power3.easeInOut, opacity: 0 }, "-=.7");
-  // });
+  gsap.registerPlugin(TweenLite);
+  let heroImage = useRef(null);
+  let winOne = useRef(null);
+  let winTwo = useRef(null);
+  let speechBubble = useRef(null);
+
+  useEffect(() => {
+    TweenLite.from(heroImage, 1, { opacity: 0, x: 50, ease: Power3.easeOut });
+    TweenLite.from(winOne, 1, { opacity: 0, x: 50, ease: Power3.easeOut, delay: 0.2 });
+    TweenLite.from(winTwo, 1, { opacity: 0, x: 50, ease: Power3.easeOut, delay: 0.4 });
+    TweenLite.from(speechBubble, 1, { opacity: 0, y: -50, ease: Power3.easeOut, delay: 0.6 });
+    // tl.from("#Hero_image", { delay: 1.2, duration: 0.6, ease: Power3.easeOut, opacity: 0, x: 40 }).from(".win-large", { delay: 0.8, duration: 0.6, ease: Power3.easeInOut, opacity: 0, scale: 0, transformOrigin: "bottom" }, "-=.7").from(".win-small", { delay: 0.8, duration: 0.6, ease: Power3.easeInOut, opacity: 0, scale: 0, transformOrigin: "left" }, "-=.7").from(".speech", { delay: 0.8, duration: 0.6, ease: Power3.easeInOut, opacity: 0 }, "-=.7");
+  });
 
   return (
-    <>
+    <div ref={el => (heroImage = el)}>
       <svg viewBox="0 0 534 549.685">
-        <g id="Hero_image" transform="translate(-25.63 -24.878)">
+        <g transform="translate(-25.63 -24.878)">
           <g id="freepik--Floor--inject-64" transform="translate(25.63 278.901)" opacity="0.03">
             <ellipse id="freepik--floor--inject-64-2" data-name="freepik--floor--inject-64" cx="267" cy="147.831" rx="267" ry="147.831" fill="#f5f5f5" />
           </g>
@@ -62,7 +72,7 @@ const HeroImage = () => {
                   <path id="Path_31" data-name="Path 31" d="M388.81,124.2a5.239,5.239,0,0,1,.714,2.381V229.245l4.549-2.632V123.971a5,5,0,0,0-.714-2.381Z" transform="translate(-252.907 -42.965)" fill="#263238" />
                 </g>
               </g>
-              <g className="win-large" id="freepik--Window--inject-64" transform="translate(163.06)">
+              <g ref={el => (winOne = el)} id="freepik--Window--inject-64" transform="translate(163.06)">
                 <g id="freepik--window--inject-64-2" data-name="freepik--window--inject-64">
                   <path id="Path_32" data-name="Path 32" d="M292.752,39.737a1.344,1.344,0,0,1,0-.214h0a1.006,1.006,0,0,1,0-.2.952.952,0,0,1,.131-.3.393.393,0,0,1,.071-.119l.071-.083a.951.951,0,0,1,.155-.155h0a1.193,1.193,0,0,1,.2-.119,1.7,1.7,0,0,1,1.56.2l153.82,88.758a5.179,5.179,0,0,1,2.322,4.037V242.866h0v.512a1.584,1.584,0,0,1-.834,1.393l-.107.071-.119.071h-.2a1.192,1.192,0,0,1-.3,0,1.536,1.536,0,0,1-.762-.226H448.7l-2.048-1.25-151.593-87.5a5.144,5.144,0,0,1-2.322-4.025V39.987C292.74,39.928,292.752,39.833,292.752,39.737Z" transform="translate(-292.74 -36.698)" fill="#455a64" />
                   <path id="Path_33" data-name="Path 33" d="M293.38,38.767a1.7,1.7,0,0,1,1.56.2l153.82,88.758a5.18,5.18,0,0,1,2.322,4.037v7.645l2.965-1.738v-7.537a5.144,5.144,0,0,0-2.322-4.025L297.9,37.29a1.619,1.619,0,0,0-1.679-.143C295.809,37.409,293.88,38.5,293.38,38.767Z" transform="translate(-292.618 -36.977)" fill="#fff" />
@@ -199,7 +209,7 @@ const HeroImage = () => {
                   <path id="Path_158" data-name="Path 158" d="M304.454,134.48l13.646,7.883a1.738,1.738,0,0,1,.834,1.369c0,.488-.369.679-.834.417l-13.646-7.835a1.762,1.762,0,0,1-.834-1.369C303.62,134.4,303.989,134.206,304.454,134.48Z" transform="translate(-294.439 -38.109)" fill="#fff" opacity="0.8" />
                 </g>
               </g>
-              <g className="win-small" id="freepik--window--inject-64-3" data-name="freepik--window--inject-64" transform="translate(303.615 131.943)">
+              <g ref={el => (winTwo = el)} id="freepik--window--inject-64-3" data-name="freepik--window--inject-64" transform="translate(303.615 131.943)">
                 <g id="Group_15" data-name="Group 15" transform="translate(0 1.778)" opacity="0.8">
                   <path id="Path_159" data-name="Path 159" d="M410.78,150.483v90.949a4.179,4.179,0,0,0,1.893,3.275l52.25,30.15a1.31,1.31,0,0,0,.631.179h.5l.107-.071.107-.1a1.453,1.453,0,0,0,.345-.5,2.238,2.238,0,0,0,.2-.953v-90.5a4.167,4.167,0,0,0-1.893-3.275l-52.25-30.114a1.381,1.381,0,0,0-1.274-.167l-.155.1h0l-.131.119a.249.249,0,0,0,0,.071.309.309,0,0,0-.059.107.643.643,0,0,0-.119.238.689.689,0,0,0,0,.167h0v.179C410.792,150.328,410.78,150.412,410.78,150.483Z" transform="translate(-410.78 -149.278)" fill="#455a64" />
                 </g>
@@ -345,7 +355,7 @@ const HeroImage = () => {
               <path id="Path_271" data-name="Path 271" d="M108.56,241.453c18.826,10.24,33.555,20.243,45.248,56.167s18.016,67.729,40.962,73.885c0,0-10.371,4.132-42.164-9.323-10.121-4.275-22.4-12.074-30.459-16.6-15.8-8.871-25.387-16.135-26.9-18.861-8.335-14.991-14.039-58.561-11.991-77.4S99.118,236.309,108.56,241.453Z" transform="translate(-82.839 -93.988)" fill="#fff" />
             </g>
           </g>
-          <g className="speech" id="freepik--speech-bubble--inject-64" transform="translate(189.476 24.878)">
+          <g ref={el => (speechBubble = el)} id="freepik--speech-bubble--inject-64" transform="translate(189.476 24.878)">
             <g id="freepik--speech-bubble--inject-64-2" data-name="freepik--speech-bubble--inject-64" transform="translate(0)">
               <path id="Path_272" data-name="Path 272" d="M195.549,111.377l-5.168-9.776,4.18-12.086V82.12l-12.8,7.395v7.395l5.5,9.526a.738.738,0,0,0,.381.333h0Z" transform="translate(-159.696 -13.959)" fill="#fff" />
               <path id="Path_273" data-name="Path 273" d="M195.549,111.377l-5.168-9.776,4.18-12.086V82.12l-12.8,7.395v7.395l5.5,9.526a.738.738,0,0,0,.381.333h0Z" transform="translate(-159.696 -13.959)" opacity="0.2" />
@@ -361,7 +371,7 @@ const HeroImage = () => {
           </g>
         </g>
       </svg>
-    </>
+    </div>
   );
 };
 
