@@ -1,11 +1,10 @@
-import React, { useEffect } from "react";
-import { TimelineLite, Power3 } from "gsap";
+import React from "react";
 
 const HeroImage = () => {
-  let tl = new TimelineLite();
-  useEffect(() => {
-    tl.from("#Hero_image", { delay: 1.2, duration: 0.6, ease: Power3.easeOut, opacity: 0, x: 40 }).from(".win-large", { delay: 0.8, duration: 0.6, ease: Power3.easeInOut, opacity: 0, scale: 0, transformOrigin: "bottom" }, "-=.7").from(".win-small", { delay: 0.8, duration: 0.6, ease: Power3.easeInOut, opacity: 0, scale: 0, transformOrigin: "left" }, "-=.7").from(".speech", { delay: 0.8, duration: 0.6, ease: Power3.easeInOut, opacity: 0 }, "-=.7");
-  });
+  // let tl = new TimelineLite();
+  // useEffect(() => {
+  //   tl.from("#Hero_image", { delay: 1.2, duration: 0.6, ease: Power3.easeOut, opacity: 0, x: 40 }).from(".win-large", { delay: 0.8, duration: 0.6, ease: Power3.easeInOut, opacity: 0, scale: 0, transformOrigin: "bottom" }, "-=.7").from(".win-small", { delay: 0.8, duration: 0.6, ease: Power3.easeInOut, opacity: 0, scale: 0, transformOrigin: "left" }, "-=.7").from(".speech", { delay: 0.8, duration: 0.6, ease: Power3.easeInOut, opacity: 0 }, "-=.7");
+  // });
 
   return (
     <>
