@@ -1,12 +1,13 @@
 import React, { useRef, useEffect } from "react";
 import { Link as LinkS } from "react-scroll";
-import { TweenLite, Power3 } from "gsap";
+import { gsap, TweenLite, Power3 } from "gsap";
 
 import HeroImage from "./HeroImage";
 
 import "./Hero.css";
 
 const Hero = () => {
+  gsap.registerPlugin(TweenLite);
   let heroHeader = useRef(null);
   let heroTagline = useRef(null);
   let heroCta = useRef(null);
