@@ -24,11 +24,11 @@ export const Projects = [
   },
   {
     title: "Proshop",
-    desc: "Online ecommerce website around selling electronic devices. Users can sign up and add products to their cart before purchasing them with a sandbox paypal account. Admins can update products and orders made on the site.",
+    desc: "Online ecommerce website around selling electronic devices. Users can sign up and add products to their cart before purchasing them with a sandbox paypal account. Admins can update products and orders made on the site. Project ongoing.",
     screen: proshopImg,
     tools: ["React", "Redux", "Node JS", "MongoDB", "Web API"],
-    githubUrl: "http://github.com",
-    demoUrl: "http://google.com",
+    // githubUrl: "http://github.com",
+    // demoUrl: "http://google.com",
     imageFirst: false
   },
   {
