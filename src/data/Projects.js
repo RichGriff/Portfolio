@@ -1,5 +1,7 @@
 import exploreImg from "../images/explore_screen.png";
 import netflixImg from "../images/netflix_screen.png";
+import portfolioImg from "../images/portfolio.png";
+import proshopImg from "../images/proshop_screen.png";
 
 export const Projects = [
   {
@@ -23,7 +25,7 @@ export const Projects = [
   {
     title: "Proshop",
     desc: "Online ecommerce website around selling electronic devices. Users can sign up and add products to their cart before purchasing them with a sandbox paypal account. Admins can update products and orders made on the site.",
-    screen: exploreImg,
+    screen: proshopImg,
     tools: ["React", "Redux", "Node JS", "MongoDB", "Web API"],
     githubUrl: "http://github.com",
     demoUrl: "http://google.com",
@@ -32,10 +34,10 @@ export const Projects = [
   {
     title: "Portfolio Website",
     desc: "Portfolio website built to showcase some recent front end development projects using various technologies.",
-    screen: netflixImg,
+    screen: portfolioImg,
     tools: ["React", "GSAP Animations", "Adobe XD"],
-    githubUrl: "http://github.com",
-    demoUrl: "http://google.com",
+    githubUrl: "https://github.com/RichGriff/Portfolio",
+    demoUrl: "https://richardgriffiths-portfolio.netlify.app/",
     imageFirst: true
   }
 ];
