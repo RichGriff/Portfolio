@@ -21,11 +21,12 @@ const Hero = () => {
       <div className="hero__container">
         <div className="hero__wrapper">
           <div className="hero__content">
+            <p ref={el => (heroTagline = el)}>Hi, I'm Richard</p>
             <h1 ref={el => (heroHeader = el)}>
               Front-End <br />
               Web Developer
             </h1>
-            <p ref={el => (heroTagline = el)}>Hi, I'm Richard a Front-End Web Developer with a passion in creating applications with React and other Javascript technologies.</p>
+            <p ref={el => (heroTagline = el)}>with a passion for creating web applications with React, Based in Wales, UK</p>
             <div ref={el => (heroCta = el)}>
               <LinkS className="hero__btn" activeClass="active" spy={true} smooth={true} duration={800} to="work">
                 View my work
